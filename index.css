@@ -16,10 +16,12 @@ body{
 
 #heart2{
     right: 4rem;
+    visibility: visible;
 }
 
 #heart3{
     right: 7rem;
+    visibility: visible;
 }
 
 p{
