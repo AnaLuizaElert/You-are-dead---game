@@ -6,7 +6,7 @@ let timer = parseInt(document.querySelector("#timer").value);
 document.addEventListener("DOMContentLoaded", function() {
 
     console.log(document.querySelector("#timer"))
-    console.log(parseInt(document.querySelector("#timer").value))
+    console.log(document.querySelector("#timer").value)
 
     for(; timer > 0; timer --){
         setTimeout(() => {
