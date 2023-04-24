@@ -7,17 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let character =  Array.from(document.querySelectorAll(".clickable"));
   
     character.sort(() => Math.random() - 0.5);
+    /*Tirarrrr*/
+    localStorage.clear();
 
     if(localStorage.getItem("enemyQty") == null){
         localStorage.setItem("enemyQty", 0);
-        /*Tirarrrr*/
-        localStorage.clear();
     }
     
     if(localStorage.getItem("friendQty") == null){
         localStorage.setItem("friendQty", 0);
-        /*Tirarrrr*/
-        localStorage.clear();
     }
 
     let x = 0;
