@@ -2,5 +2,8 @@
     margin: 0 !important;
     height: 1rem;
     width: auto;
+    top: 0;
+    right: 0;
     position: absolute;
+    background-image: url('./img/icons/heart.png');
 }
