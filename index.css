@@ -9,8 +9,10 @@ body{
 }
 
 #hearts{
-    width: 100rem;
+    width: 100vw;
     height: 5rem;
+    top: 0;
+    left: 0;
 }
 
 .heart{
