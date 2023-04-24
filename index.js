@@ -104,6 +104,6 @@ enemy.forEach((enemyElement) => {
       if(parseInt(localStorage.getItem("friendQty")) >= 4){
           alert("you lost")
       } 
-          friendElement.setAttribute('visible', false);
+        friendElement.setAttribute('visible', false);
     });
   });
