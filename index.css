@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .heart{
     height: 2rem;
     width: 2rem;
@@ -18,11 +22,13 @@
 }
 
 #timer{
+    position: absolute;
     top: 1rem;
     left: 1rem;
 }
 
 #qtyEnemies{
+    position: absolute;
     top: 3rem;
     left: 1rem;
 }
