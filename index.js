@@ -108,9 +108,6 @@ enemy.forEach((enemyElement) => {
   
   friend.forEach((friendElement) => {
     friendElement.addEventListener('click', () => {
-      friendElement.classList.remove("clickable");
-      friendElement.setAttribute('visible', false);
-
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
 
