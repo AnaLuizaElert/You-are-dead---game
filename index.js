@@ -110,12 +110,12 @@ enemy.forEach((enemyElement) => {
     friendElement.addEventListener('click', () => {
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
-      if(document.getElementById("heart1").style.visibility == true){
-        document.getElementById("heart1").style.visibility = false;
-      }else if(document.getElementById("heart2").style.visibility == true){
-        document.getElementById("heart2").style.visibility = false;
+      if(document.getElementById("heart1").style.visibility == "visible"){
+        document.getElementById("heart1").style.visibility = "hidden";
+      }else if(document.getElementById("heart2").style.visibility == "visible"){
+        document.getElementById("heart2").style.visibility = "hidden";
       } else {
-        document.getElementById("heart3").style.visibility = false;
+        document.getElementById("heart3").style.visibility = "hidden";
       }
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
           alert("You're dead")
