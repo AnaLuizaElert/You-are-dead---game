@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for(; timer > 0; timer --){
         console.log(timer)
-        setTimeout(() => {
+        setInterval(() => {
             document.querySelector("#timer").innerHTML = timer; 
             console.log(timer)
         }, 1000)
