@@ -14,6 +14,12 @@
 </head>
 
 <body>
+	
+	<!-- hearts -->
+	<img click-listener src="./img/icons/heart.png" class="heart" id="heart1">
+	<img click-listener src="./img/icons/heart.png" class="heart" id="heart2">
+	<img click-listener src="./img/icons/heart.png" class="heart" id="heart3">
+
 	<a-scene class="scene" embedded vr-mode-ui="enabled: false" arjs=" sourceType: webcam; debugUIEnabled: false;">
 
 		<a-assets>
@@ -43,10 +49,6 @@
 
 		</a-assets>
 
-		<!-- hearts -->
-		<img click-listener src="./img/icons/heart.png" class="heart" id="heart1">
-		<img click-listener src="./img/icons/heart.png" class="heart" id="heart2">
-		<img click-listener src="./img/icons/heart.png" class="heart" id="heart3">
 
 		<!-- enemies -->
 		<a-image click-listener src="#enemy1" class="clickable enemy" id="enemy1" scale="6 6 6 "></a-image>
