@@ -2,8 +2,8 @@
     margin: 0 !important;
     height: 10rem;
     width: auto;
-    top: 0;
-    right: 0;
+    /* top: 0;
+    right: 0; */
     position: absolute;
     background-image: url('./img/icons/heart.png');
     background-repeat: no-repeat;
