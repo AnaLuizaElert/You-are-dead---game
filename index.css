@@ -1,8 +1,7 @@
 .heart{
-    margin: 0 !important;
-    height: 10rem;
-    width: 10rem;
-    /* top: 0;
-    right: 0; */
+    height: 5rem;
+    width: 5rem;
+    top: 0;
+    right: 0;
     position: absolute;
 }
