@@ -3,13 +3,18 @@
     background-color: transparent;
 }
 
+#hearts{
+    width: 100rem;
+    height: 5rem;
+}
+
 .heart{
     height: 1rem;
     width: auto;
     z-index: 10;
+    position: absolute;
 }
 
-#hearts{
-    width: 100rem;
-    height: 5rem;
+.scene{
+    z-index: -1;
 }
