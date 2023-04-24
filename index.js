@@ -5,12 +5,12 @@ let aux = timer;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-setInterval(() => {
-        console.log(aux + " dentro");
+let interval = setInterval(() => {
         aux --;
+        console.log(aux);
         document.getElementById("timer").innerHTML = aux;
         if(aux == 0){
-            clearInterval();
+            clearInterval(interval);
         }
 }, 1000)
 
