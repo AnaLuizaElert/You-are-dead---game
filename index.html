@@ -39,7 +39,16 @@
 			<img id="friend11" src="./img/friends/friend11.png" />
 			<img id="friend12" src="./img/friends/friend12.png" />
 			<img id="friend13" src="./img/friends/friend13.png" />
+			
+			<!-- icons -->
+			<img id="heart" src="./img/icons/heart.png" />
+
 		</a-assets>
+
+		<!-- hearts -->
+		<a-image click-listener src="#heart" class="heart" id="heart1" scale="2 2 2 " style="position: absolute" position="0 0 0 "></a-image>
+		<a-image click-listener src="#heart" class="heart" id="heart2" scale="2 2 2 " style="position: absolute" position="0 0 0 "></a-image>
+		<a-image click-listener src="#heart" class="heart" id="heart3" scale="2 2 2 " style="position: absolute" position="0 0 0 "></a-image>
 
 		<!-- enemies -->
 		<a-image click-listener src="#enemy1" class="clickable enemy" id="enemy1" scale="6 6 6 "></a-image>
@@ -67,7 +76,7 @@
 
 		<a-entity id="rig">
 			<a-entity cursor raycaster="far: 200; objects: .clickable" id="camera" camera look-controls wasd-controls>
-				<a-cursor id="cursor" color="purple" raycaster fuse="true" fuse-timeout="4000"></a-cursor>
+				<a-cursor id="cursor" color="purple" raycaster fuse="true" fuse-timeout="2000"></a-cursor>
 			</a-entity>
 		</a-entity>
 		
