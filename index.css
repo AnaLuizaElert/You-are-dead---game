@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    background-color: transparent;
+}
+
 .heart{
     height: 1rem;
     width: auto;
@@ -6,5 +11,5 @@
 
 #hearts{
     width: 100rem;
-    height: 20rem;
+    height: 5rem;
 }
