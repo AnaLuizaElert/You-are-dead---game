@@ -1,18 +1,18 @@
 .heart{
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     position: absolute;
     top: 0;
 }
 
 #heart1{
-    right: 0;
+    right: 0rem;
 }
 
 #heart2{
-    right: 3rem;
+    right: 2rem;
 }
 
 #heart3{
-    right: 6rem;
+    right: 4rem;
 }
