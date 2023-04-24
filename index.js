@@ -10,10 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(localStorage.getItem("enemyQty") == null){
         localStorage.setItem("enemyQty", 0);
+        /*Tirarrrr*/
+        localStorage.clear();
     }
-
+    
     if(localStorage.getItem("friendQty") == null){
         localStorage.setItem("friendQty", 0);
+        /*Tirarrrr*/
+        localStorage.clear();
     }
 
     let x = 0;
