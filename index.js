@@ -1,5 +1,12 @@
 const friend = document.querySelectorAll(".friend");
 const enemy = document.querySelectorAll(".enemy");
+let timer = parseInt(document.querySelector("#timer"));
+
+for(; timer > 0; timer --){
+    setTimeout(() => {
+        document.querySelector("#timer").innerHTML = timer; 
+    }, 1000)
+}
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -81,9 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         character[i].setAttribute('position', {x:x, y:y, z:z})
 
-    }
-
-    
+    }    
 });
 
 enemy.forEach((enemyElement) => {

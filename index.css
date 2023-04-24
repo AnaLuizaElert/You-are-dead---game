@@ -26,6 +26,12 @@ p{
     font-weight: bold;
 }
 
+#seg{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
 #timer{
     position: absolute;
     top: 1rem;
