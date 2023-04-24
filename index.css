@@ -1,5 +1,10 @@
 .heart{
-    position: fixed;
     height: 1rem;
     width: auto;
+    z-index: 10;
+}
+
+#hearts{
+    width: 100rem;
+    height: 20rem;
 }
