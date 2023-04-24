@@ -108,8 +108,7 @@ enemy.forEach((enemyElement) => {
   
   friend.forEach((friendElement) => {
     friendElement.addEventListener('click', () => {
-      friendElement.setAttribute('visible', false);
-      document.removeChild(friendElement);
+    //   friendElement.setAttribute('visible', false);
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
 
@@ -126,5 +125,6 @@ enemy.forEach((enemyElement) => {
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
           alert("You're dead")
       } 
+      document.removeChild(friendElement);
     });
   });
