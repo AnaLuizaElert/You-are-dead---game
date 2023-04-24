@@ -5,13 +5,15 @@ let aux = timer;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-setTimeout(() => {
-    setInterval(() => {
+setInterval(() => {
         console.log(aux + " dentro");
         aux --;
         document.getElementById("timer").innerHTML = aux;
-    }, 1000)
-}, 0)
+        if(aux == 0){
+            clearInterval();
+        }
+}, 1000)
+
     
     let character =  Array.from(document.querySelectorAll(".clickable"));
   
