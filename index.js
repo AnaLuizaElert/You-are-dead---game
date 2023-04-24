@@ -114,14 +114,18 @@ enemy.forEach((enemyElement) => {
       if(document.getElementById("heart1").style.visibility === "visible"){
         document.getElementById("heart1").style.visibility = "hidden";
 
-      }else if(document.getElementById("heart2").style.visibility === "visible"){
+      } 
+      
+      if(document.getElementById("heart2").style.visibility === "visible"){
         document.getElementById("heart2").style.visibility = "hidden";
 
-      } else {
+      } 
+      
+      if(document.getElementById("heart3").style.visibility === "visible"){
         document.getElementById("heart3").style.visibility = "hidden";
       }
 
-      if(parseInt(localStorage.getItem("friendQty")) >= 3){
+      if(parseInt(localStorage.getItem("friendQty")) >= 4){
           alert("You're dead")
       } 
         friendElement.setAttribute('visible', false);
