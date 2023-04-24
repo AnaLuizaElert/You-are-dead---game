@@ -111,17 +111,17 @@ enemy.forEach((enemyElement) => {
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
 
-      if(document.getElementById("heart1").style.visibility === "visible"){
+      if(document.getElementById("heart1").style.visibility == ""){
         document.getElementById("heart1").style.visibility = "hidden";
 
       } 
       
-      if(document.getElementById("heart2").style.visibility === "visible"){
+      if(document.getElementById("heart2").style.visibility == ""){
         document.getElementById("heart2").style.visibility = "hidden";
 
       } 
       
-      if(document.getElementById("heart3").style.visibility === "visible"){
+      if(document.getElementById("heart3").style.visibility == ""){
         document.getElementById("heart3").style.visibility = "hidden";
       }
 
