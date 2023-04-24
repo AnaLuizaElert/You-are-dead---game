@@ -11,7 +11,7 @@ setTimeout(() => {
         aux --;
         document.getElementById("timer").innerHTML = aux;
     }, 1000)
-}, 60000)
+}, 0)
     
     let character =  Array.from(document.querySelectorAll(".clickable"));
   
