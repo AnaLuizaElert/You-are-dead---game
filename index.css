@@ -3,6 +3,11 @@
     background-color: transparent;
 }
 
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
 #hearts{
     width: 100rem;
     height: 5rem;
