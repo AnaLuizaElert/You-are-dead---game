@@ -109,6 +109,7 @@ enemy.forEach((enemyElement) => {
   friend.forEach((friendElement) => {
     friendElement.addEventListener('click', () => {
       friendElement.setAttribute('visible', false);
+      document.removeChild(friendElement);
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
 
