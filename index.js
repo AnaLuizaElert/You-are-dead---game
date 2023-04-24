@@ -11,6 +11,7 @@ let interval = setInterval(() => {
         document.getElementById("timer").innerHTML = aux;
         if(aux == 0){
             clearInterval(interval);
+            alert("You're dead")
         }
 }, 1000)
 
@@ -100,7 +101,7 @@ enemy.forEach((enemyElement) => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
         if(parseInt(localStorage.getItem("enemyQty")) == 7){
-            alert("you won")
+            alert("you're safe")
         } 
         enemyElement.setAttribute('visible', false);
     });
@@ -111,7 +112,7 @@ enemy.forEach((enemyElement) => {
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
-          alert("you lost")
+          alert("You're dead")
       } 
         friendElement.setAttribute('visible', false);
     });
