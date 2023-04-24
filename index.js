@@ -1,13 +1,15 @@
 const friend = document.querySelectorAll(".friend");
 const enemy = document.querySelectorAll(".enemy");
 let timer = parseInt(document.getElementById("timer").innerHTML);
-
+let aux = timer;
 
 document.addEventListener("DOMContentLoaded", function() {
 
 setTimeout(() => {
     setInterval(() => {
-        console.log(timer + " dentro")
+        console.log(aux + " dentro");
+        aux --;
+        document.getElementById("timer").innerHTML = aux;
     }, 1000)
 }, 60000)
     
