@@ -82,19 +82,22 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
-Array.from(enemy).forEach.addEventListener('click', () => {
-    alert(localStorage.getItem("enemyQty"))
-    let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
-    localStorage.setItem("enemyQty", addValue);
-});
-
-
-Array.from(friend).forEach.addEventListener('click', () => {
-    alert(localStorage.getItem("friendQty"))
-    let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
-    localStorage.setItem("friendQty", addValue);
-    if(parseInt(localStorage.getItem("friendQty")) >= 4){
-        alert("you lost")
-    } 
-        this.setAttribute('visible', false);
-});
+enemy.forEach((enemyElement) => {
+    enemyElement.addEventListener('click', () => {
+      alert(localStorage.getItem("enemyQty"))
+      let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
+      localStorage.setItem("enemyQty", addValue);
+    });
+  });
+  
+  friend.forEach((friendElement) => {
+    friendElement.addEventListener('click', () => {
+      alert(localStorage.getItem("friendQty"))
+      let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
+      localStorage.setItem("friendQty", addValue);
+      if(parseInt(localStorage.getItem("friendQty")) >= 4){
+          alert("you lost")
+      } 
+          friendElement.setAttribute('visible', false);
+    });
+  });
