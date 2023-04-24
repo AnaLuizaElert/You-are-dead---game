@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for(; timer > 0; timer --){
         setTimeout(() => {
             document.querySelector("#timer").innerHTML = timer; 
+            console.log(timer)
         }, 1000)
     }
     
