@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=YES, minimum-scale=1.0, maximum-scale=1.0">
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.1/dist/mindar-image-aframe.prod.js"></script>
+	<script type='text/javascript'src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+	<title>You're dead - Game</title>
+</head>
+
+<body>
+	<a-scene class="scene" embedded vr-mode-ui="enabled: false" arjs=" sourceType: webcam; debugUIEnabled: false;">
+
+		<a-assets>
+			<!-- enemies -->
+			<img id="enemy1" src="./img/enemies/enemy1.png" />
+			<img id="enemy2" src="./img/enemies/enemy2.png" />
+			<img id="enemy3" src="./img/enemies/enemy3.png" />
+			<img id="enemy4" src="./img/enemies/enemy4.png" />
+			<img id="enemy5" src="./img/enemies/enemy5.png" />
+			<img id="enemy6" src="./img/enemies/enemy6.png" />
+			<img id="enemy7" src="./img/enemies/enemy7.png" />
+
+			<!-- friends -->
+			<img id="friend1" src="./img/friends/friend1.png" />
+			<img id="friend2" src="./img/friends/friend2.png" />
+			<img id="friend3" src="./img/friends/friend3.png" />
+			<img id="friend4" src="./img/friends/friend4.png" />
+			<img id="friend5" src="./img/friends/friend5.png" />
+			<img id="friend6" src="./img/friends/friend6.png" />
+			<img id="friend7" src="./img/friends/friend7.png" />
+			<img id="friend8" src="./img/friends/friend8.png" />
+			<img id="friend9" src="./img/friends/friend9.png" />
+			<img id="friend10" src="./img/friends/friend10.png" />
+			<img id="friend11" src="./img/friends/friend11.png" />
+			<img id="friend12" src="./img/friends/friend12.png" />
+			<img id="friend13" src="./img/friends/friend13.png" />
+		</a-assets>
+
+		<!-- enemies -->
+		<a-image click-listener src="#enemy1" class="clickable enemy" id="enemy1" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy2" class="clickable enemy" id="enemy2" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy3" class="clickable enemy" id="enemy3" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy4" class="clickable enemy" id="enemy4" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy5" class="clickable enemy" id="enemy5" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy6" class="clickable enemy" id="enemy6" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy7" class="clickable enemy" id="enemy7" scale="6 6 6 "></a-image>
+
+		<!-- friends -->
+		<a-image click-listener src="#friend1" class="clickable friend" id="friend1" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend2" class="clickable friend" id="friend2" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend3" class="clickable friend" id="friend3" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend4" class="clickable friend" id="friend4" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend5" class="clickable friend" id="friend5" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend6" class="clickable friend" id="friend6" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend7" class="clickable friend" id="friend7" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend8" class="clickable friend" id="friend8" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend9" class="clickable friend" id="friend9" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend10" class="clickable friend" id="friend10" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend11" class="clickable friend" id="friend11" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend12" class="clickable friend" id="friend12" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#friend13" class="clickable friend" id="friend13" scale="6 6 6 "></a-image>
+
+		<a-entity id="rig">
+			<a-entity cursor raycaster="far: 200; objects: .clickable" id="camera" camera look-controls wasd-controls>
+				<a-cursor id="cursor" color="purple" raycaster fuse="true" fuse-timeout="1000"></a-cursor>
+			</a-entity>
+		</a-entity>
+		
+	</a-scene>
+
+	<script src="./index.js"></script>
+</body>
+</html>
