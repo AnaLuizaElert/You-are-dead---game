@@ -5,6 +5,8 @@ let timer = parseInt(document.querySelector("#timer"));
 
 document.addEventListener("DOMContentLoaded", function() {
 
+    console.log(timer)
+    
     for(; timer > 0; timer --){
         setTimeout(() => {
             document.querySelector("#timer").innerHTML = timer; 
