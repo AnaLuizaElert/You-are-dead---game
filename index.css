@@ -21,6 +21,11 @@ body{
     right: 7rem;
 }
 
+p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 #timer{
     position: absolute;
     top: 1rem;
