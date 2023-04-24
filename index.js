@@ -5,13 +5,13 @@ let timer = parseInt(document.getElementById("timer").innerHTML);
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    // for(; timer > 0; timer --){
+    for(; timer > 0; timer --){
         console.log(timer)
         setInterval(() => {
             document.querySelector("#timer").innerHTML = timer; 
-            console.log(timer)
+            console.log(timer + " dentro")
         }, 1000)
-    // }
+    }
     
     let character =  Array.from(document.querySelectorAll(".clickable"));
   
