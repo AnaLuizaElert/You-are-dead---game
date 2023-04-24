@@ -1,12 +1,12 @@
 const friend = document.querySelectorAll(".friend");
 const enemy = document.querySelectorAll(".enemy");
-let timer = parseInt(document.querySelector("#timer"));
+let timer = parseInt(document.querySelector("#timer").value);
 
 
 document.addEventListener("DOMContentLoaded", function() {
 
     console.log(timer)
-    
+
     for(; timer > 0; timer --){
         setTimeout(() => {
             document.querySelector("#timer").innerHTML = timer; 
