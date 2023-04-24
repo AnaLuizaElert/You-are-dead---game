@@ -10,11 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
     /*Tirarrrr*/
     localStorage.clear();
 
-    if(localStorage.getItem("enemyQty") == null){
+    if(localStorage.getItem("enemyQty") == null || 
+    localStorage.getItem("enemyQty") == undefined){
         localStorage.setItem("enemyQty", 0);
     }
     
-    if(localStorage.getItem("friendQty") == null){
+    if(localStorage.getItem("friendQty") == null || 
+    localStorage.getItem("friendQty") == undefined){
         localStorage.setItem("friendQty", 0);
     }
 
@@ -86,15 +88,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
-      alert(localStorage.getItem("enemyQty"))
-      let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
-      localStorage.setItem("enemyQty", addValue);
+        let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
+        localStorage.setItem("enemyQty", addValue);
+        if(parseInt(localStorage.getItem("enemyQty")) == 7){
+            alert("you won")
+        } 
+        enemyElement.setAttribute('visible', false);
     });
   });
   
   friend.forEach((friendElement) => {
     friendElement.addEventListener('click', () => {
-      alert(localStorage.getItem("friendQty"))
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
       if(parseInt(localStorage.getItem("friendQty")) >= 4){
