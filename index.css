@@ -2,17 +2,27 @@
     height: 2rem;
     width: 2rem;
     position: absolute;
-    top: 0;
+    top: 1rem;
 }
 
 #heart1{
-    right: 0rem;
+    right: 1rem;
 }
 
 #heart2{
-    right: 2rem;
+    right: 4rem;
 }
 
 #heart3{
-    right: 4rem;
+    right: 7rem;
+}
+
+#timer{
+    top: 1rem;
+    left: 1rem;
+}
+
+#qtyEnemies{
+    top: 3rem;
+    left: 1rem;
 }

@@ -101,7 +101,7 @@ enemy.forEach((enemyElement) => {
     friendElement.addEventListener('click', () => {
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
       localStorage.setItem("friendQty", addValue);
-      if(parseInt(localStorage.getItem("friendQty")) >= 4){
+      if(parseInt(localStorage.getItem("friendQty")) >= 3){
           alert("you lost")
       } 
         friendElement.setAttribute('visible', false);
