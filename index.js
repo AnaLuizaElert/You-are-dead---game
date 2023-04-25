@@ -55,14 +55,7 @@ let interval = setInterval(() => {
         } else if(i == 4 || i == 9){
             x = 15;
             y = 10;
-        }
-
-        if(i > 4 && i < 10){
-            z = -15;
-        }
-
-        // paredes dos lados
-        if(i == 10 || i == 15){
+        } else if(i == 10 || i == 15){
             z = 14;
             y = 0;
         }else if(i == 11 || i == 16){
@@ -74,9 +67,13 @@ let interval = setInterval(() => {
         } else if(i == 13 || i == 18){
             z = 2;
             y = 20;
-        } else if(i == 14 || i == 19){
+        } else {
             z = 3;
             y = 10;
+        }
+
+        if(i > 4 && i < 10){
+            z = -15;
         }
 
         if(i > 9 && i < 15){
