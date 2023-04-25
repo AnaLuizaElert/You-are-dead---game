@@ -75,8 +75,8 @@ let interval = setInterval(() => {
             z = 3;
             y = 7;
         } else if(i == 14 || i == 19){
-            z = 10;
-            y = 10;
+            z = 3;
+            y = 25;
         }
 
         if(i > 9 && i < 15){
