@@ -57,8 +57,12 @@ let interval = setInterval(() => {
             y = 25;
         }
 
-        if(i >= 5 && i <= 9){
+        if(i > 4 && i < 10){
             z = -15;
+        }
+
+        if(i >= 0 && i < 5){
+            z = 15;
         }
 
         // paredes dos lados
