@@ -16,7 +16,7 @@ let interval = setInterval(() => {
 
     
     let character =  Array.from(document.querySelectorAll(".clickable"));
-    console.log(character.size)
+    console.log(character.length)
     console.log(friend.length)
     console.log(enemy.length)
   
