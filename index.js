@@ -73,7 +73,7 @@ let interval = setInterval(() => {
             y = 30;
         } else if(i == 13 || i == 18){
             z = 2;
-            y = 40;
+            y = 20;
         } else if(i == 14 || i == 19){
             z = 3;
             y = 10;
