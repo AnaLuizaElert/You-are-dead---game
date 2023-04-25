@@ -40,7 +40,7 @@ let interval = setInterval(() => {
 
     for (let i = 0; i < character.length; i++) {
         // parede da frente e de trás
-        if(i == 5){
+        if(i == 0 || i == 5){
             x = 0;
             y = 0;
         }else if(i == 1 || i == 6){
@@ -56,6 +56,7 @@ let interval = setInterval(() => {
             x = 15;
             y = 10;
         }
+
         if(i > 4 && i < 10){
             z = -15;
         }
@@ -72,7 +73,7 @@ let interval = setInterval(() => {
             y = 30;
         } else if(i == 13 || i == 18){
             z = 3;
-            y = 7;
+            y = 40;
         } else if(i == 14 || i == 19){
             z = 2;
             y = 10;
