@@ -20,7 +20,7 @@ let interval = setInterval(() => {
     console.log(friend.length)
     console.log(enemy.length)
   
-    character.sort(() => Math.random() - 0.5);
+    // character.sort(() => Math.random() - 0.5);
     /*Tirarrrr*/
     localStorage.clear();
 
@@ -55,7 +55,14 @@ let interval = setInterval(() => {
         } else if(i == 4 || i == 9){
             x = 15;
             y = 10;
-        } else if(i == 10 || i == 15){
+        }
+
+        if(i > 4 && i < 10){
+            z = -15;
+        }
+
+        // paredes dos lados
+        if(i == 10 || i == 15){
             z = 14;
             y = 0;
         }else if(i == 11 || i == 16){
@@ -66,14 +73,10 @@ let interval = setInterval(() => {
             y = 30;
         } else if(i == 13 || i == 18){
             z = 2;
-            y = 20;
-        } else {
+            y = 40;
+        } else if(i == 14 || i == 19){
             z = 3;
             y = 10;
-        }
-
-        if(i > 4 && i < 10){
-            z = -15;
         }
 
         if(i > 9 && i < 15){
