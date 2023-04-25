@@ -57,7 +57,7 @@ let interval = setInterval(() => {
             y = 25;
         }
 
-        if(i > 4 && i < 10){
+        if(i >= 5 && i <= 9){
             z = -15;
         }
 
