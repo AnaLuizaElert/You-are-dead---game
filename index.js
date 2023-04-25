@@ -100,8 +100,9 @@ enemy.forEach((enemyElement) => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
         if(parseInt(localStorage.getItem("enemyQty")) == 7){
-            alert("you're safe")
+            alert("you're safe");
         } 
+        document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
         enemyElement.setAttribute('visible', false);
     });
   });
