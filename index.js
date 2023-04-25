@@ -54,7 +54,7 @@ let interval = setInterval(() => {
             y = 7;
         } else if(i == 4 || i == 9){
             x = 15;
-            y = 10;
+            y = 25;
         }
 
         if(i > 4 && i < 10){
