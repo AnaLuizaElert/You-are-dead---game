@@ -16,9 +16,9 @@ let interval = setInterval(() => {
 
     
     let character =  Array.from(document.querySelectorAll(".clickable"));
-    console.log(character.length())
-    console.log(friend.length())
-    console.log(enemy.length())
+    console.log(character.size)
+    console.log(friend.length)
+    console.log(enemy.length)
   
     character.sort(() => Math.random() - 0.5);
     /*Tirarrrr*/
