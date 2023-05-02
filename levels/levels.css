@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Jujutsu;
+    src: url(/fonts/Jujutsu.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter.ttf);
+}
+
 body{
     margin: 0;
 }
