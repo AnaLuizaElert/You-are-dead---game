@@ -108,7 +108,7 @@ enemy.forEach((enemyElement) => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
         if(parseInt(localStorage.getItem("enemyQty")) == 7){
-            alert("you're safe");
+            window.location.href="/venceu.html";
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
         enemyElement.setAttribute('visible', false);
@@ -131,7 +131,7 @@ enemy.forEach((enemyElement) => {
       }
 
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
-          alert("You're dead")
+        window.location.href="/perdeu.html";
       } 
     });
 });
