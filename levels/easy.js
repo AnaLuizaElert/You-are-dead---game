@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if(i > 4 && i < 10){
             z = -15;
         }
-
+        
         if(i >= 0 && i < 5){
             z = 15;
         }
-
+        
         // paredes dos lados
         if(i == 10 || i == 15){
             z = 14;
@@ -82,23 +82,24 @@ document.addEventListener("DOMContentLoaded", function() {
             z = 3;
             y = 10;
         }
-
+        
         if(i > 9 && i < 15){
             x = 20;
         }
-
+        
         if(i > 14 && i < 20){
             x = -20;
         }
-
+        
         if(i > 9 && i < 15){
             character[i].setAttribute('rotation', {x:90, y:270, z:0})
         }
         if(i > 14 && i < 20){
             character[i].setAttribute('rotation', {x:90, y:90, z:0})
         }
-
+        
         character[i].setAttribute('position', {x:x, y:y, z:z})
+        alert(character[i].getAttribute('position', {x:x, y:y, z:z}));
 
     }    
 });
