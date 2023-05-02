@@ -91,21 +91,18 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 15;
         }
         
-        if(i > 9 && i < 15){
+        if((i > 9 && i < 15) || i == 21){
             x = 20;
         }
         
-        if(i > 14 && i < 22){
+        if(i > 14 && i < 22 && i != 21){
             x = -20;
-            if(i == 21){
-                x = 20;
-            }
         }
         
-        if(i > 9 && i < 15){
+        if(i > 9 && i < 15 || i == 21){
             character[i].setAttribute('rotation', {x:90, y:270, z:0})
         }
-        if(i > 14 && i < 22){
+        if(i > 14 && i < 22 && i != 21){
             character[i].setAttribute('rotation', {x:90, y:90, z:0})
         }
         
