@@ -22,7 +22,8 @@
 	<img src="./img/icons/heart.png" class="heart" id="heart2">
 	<img src="./img/icons/heart.png" class="heart" id="heart3">
 	
-	<a-scene class="scene" embedded vr-mode-ui="enabled: false" arjs=" sourceType: webcam; debugUIEnabled: false;">
+	<a-scene class="scene" embedded vr-mode-ui="enabled: false" mindar-image="imageTargetSrc: ./targets.mind"
+	arjs=" sourceType: webcam; debugUIEnabled: false;">
 
 		<a-assets>
 			<!-- enemies -->
@@ -48,7 +49,6 @@
 			<img id="friend11img" src="./img/friends/friend11.png" />
 			<img id="friend12img" src="./img/friends/friend12.png" />
 			<img id="friend13img" src="./img/friends/friend13.png" />
-
 		</a-assets>
 
 
@@ -60,6 +60,8 @@
 		<a-image click-listener src="#enemy5img" class="clickable enemy" id="enemy5" scale="6 6 6 "></a-image>
 		<a-image click-listener src="#enemy6img" class="clickable enemy" id="enemy6" scale="6 6 6 "></a-image>
 		<a-image click-listener src="#enemy7img" class="clickable enemy" id="enemy7" scale="6 6 6 "></a-image>
+		<a-image click-listener src="#enemy7img" mindar-image-target="targetIndex: 1" 
+		class="clickable enemy" id="enemy8" scale="6 6 6 "></a-image>
 
 		<!-- friends -->
 		<a-image click-listener src="#friend1img" class="clickable friend" id="friend1" scale="6 6 6 "></a-image>
