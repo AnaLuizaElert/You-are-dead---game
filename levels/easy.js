@@ -86,20 +86,23 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(i == 14 || i == 19){
             z = 3;
             y = 10;
+        } else if(i == 20 || i == 21){
+            z = 9;
+            y = 16;
         }
         
         if(i > 9 && i < 15){
             x = 20;
         }
         
-        if(i > 14 && i < 20){
+        if(i > 14 && i < 22){
             x = -20;
         }
         
         if(i > 9 && i < 15){
             character[i].setAttribute('rotation', {x:90, y:270, z:0})
         }
-        if(i > 14 && i < 20){
+        if(i > 14 && i < 22){
             character[i].setAttribute('rotation', {x:90, y:90, z:0})
         }
         
