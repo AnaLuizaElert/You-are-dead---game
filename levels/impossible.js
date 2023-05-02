@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
             z = -15;
         }
 
-        if(i >= 0 && i < 9){
+        if(i >= 0 && i < 8){
             z = 15;
         }
 
