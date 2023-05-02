@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(i == 3 || i == 8){
             x = 5;
             y = 7;
-        } else if(i == 4 || i == 9){
+        } else{
             x = 15;
             y = 25;
         }
