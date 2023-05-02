@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         character[i].setAttribute('position', {x:x, y:y, z:z})
-        alert(character[i].getAttribute('position', {x:x, y:y, z:z}));
+        console.log(character[i].getAttribute('position', {x:x, y:y, z:z}));
 
     }    
 });
