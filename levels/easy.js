@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
             x = 5;
             y = 7;
         } else{
-            x = 15;
-            y = 25;
+            x = 10;
+            y = 10;
         }
 
         if(i > 4 && i < 10){
