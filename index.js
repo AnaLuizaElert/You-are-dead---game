@@ -8,12 +8,12 @@ function chooseMode() {
         window.location.href="/levelsInformation/escolherEasy.html"
     });
     target2.addEventListener("targetFound", event => {
-        window.location.href="/levelsInformation/escolherEasy.html"
+        window.location.href="/levelsInformation/escolherMedium.html"
     });
     target3.addEventListener("targetFound", event => {
-        window.location.href="/levelsInformation/escolherEasy.html"
+        window.location.href="/levelsInformation/escolherHard.html"
     });
     target4.addEventListener("targetFound", event => {
-        window.location.href="/levelsInformation/escolherEasy.html"
+        window.location.href="/levelsInformation/escolherImpossible.html"
     });
 }
