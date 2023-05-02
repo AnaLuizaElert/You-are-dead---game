@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let character = Array.from(document.querySelectorAll(".clickable"));
     console.log(character.length)
+    console.log(character);
     console.log(friend.length)
     console.log(enemy.length)
   
