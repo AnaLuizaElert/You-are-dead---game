@@ -101,11 +101,11 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 25;
         }
 
-        if(i > 15 && i < 23){
+        if(i > 15 && i < 24){
             x = 20;
         }
 
-        if(i > 22 && i < 32){
+        if(i > 23 && i < 32){
             x = -20;
         }
 
