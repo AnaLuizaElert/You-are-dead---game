@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 10;
         } else if(i == 20 || i == 21){
             z = 9;
-            y = 16;
+            y = 25;
         }
         
         if(i > 9 && i < 15){
@@ -97,6 +97,9 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if(i > 14 && i < 22){
             x = -20;
+            if(i == 21){
+                x = 20;
+            }
         }
         
         if(i > 9 && i < 15){
