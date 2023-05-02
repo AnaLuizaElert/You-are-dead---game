@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 30;
         }
 
-        if(i > 8 && i < 16){
+        if(i > 7 && i < 16){
             z = -15;
         }
 
