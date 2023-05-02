@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
             z = 3;
             y = 10;
         } else if(i == 20 || i == 21){
-            z = 20;
+            z = 18;
             y = 15;
         }
         
