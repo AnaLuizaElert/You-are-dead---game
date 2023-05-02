@@ -3,6 +3,10 @@ const enemy = document.querySelectorAll(".enemy");
 let timer = parseInt(document.getElementById("timer").innerHTML);
 let aux = timer;
 
+document.addEventListener("cursor", function() {
+
+})
+
 document.addEventListener("DOMContentLoaded", function() {
 
     let interval = setInterval(() => {
@@ -53,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(i == 3 || i == 8){
             x = 5;
             y = 7;
-        } else{
+        } else if(i == 4 || i == 9){
             x = 10;
             y = 10;
         }
@@ -101,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
         character[i].setAttribute('position', {x:x, y:y, z:z})
         console.log(character[i].getAttribute('position', {x:x, y:y, z:z}));
-
     }    
 });
 
