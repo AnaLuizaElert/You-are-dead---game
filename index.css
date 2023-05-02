@@ -1,17 +1,17 @@
 @font-face {
     font-family: Jujutsu;
-    src: url(./fonts/Jujutsu\ Kaisen.ttf);
+    src: url(/fonts/Jujutsu\ Kaisen.ttf);
 }
 
 @font-face {
     font-family: Inter;
-    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Fonte;
+    font-family: Jujutsu;
     font-size: larger;
 }
 
