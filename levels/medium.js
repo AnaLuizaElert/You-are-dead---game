@@ -40,61 +40,76 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 0; i < character.length; i++) {
         // parede da frente e de trás
-        if(i == 0 || i == 5){
-            x = 0;
+        if(i == 0 || i == 8){
+            x = 12;
             y = 0;
-        }else if(i == 1 || i == 6){
+        }else if(i == 1 || i == 9){
             x = 2;
-            y = 20;
-        } else if(i == 2 || i == 7){
-            x = 20;
-            y = 30;
-        } else if(i == 3 || i == 8){
-            x = 5;
+            y = 23;
+        } else if(i == 2 || i == 10){
+            x = 22;
+            y = 35;
+        } else if(i == 3 || i == 11){
+            x = 32;
             y = 7;
-        } else if(i == 4 || i == 9){
+        } else if(i == 4 || i == 12){
             x = 15;
             y = 25;
+        } else if(i == 5 || i == 13){
+            x = 24;
+            y = 3;
+        }else if(i == 6 || i == 14){
+            x = 25;
+            y = 20;
+        } else if(i == 7 || i == 15){
+            x = 6;
+            y = 30;
         }
 
-        if(i > 4 && i < 10){
+        if(i > 7 && i < 16){
             z = -15;
         }
 
-        if(i >= 0 && i < 5){
+        if(i >= 0 && i < 8){
             z = 15;
         }
 
         // paredes dos lados
-        if(i == 10 || i == 15){
-            z = 14;
-            y = 0;
-        }else if(i == 11 || i == 16){
-            z = 10;
-            y = 20;
-        } else if(i == 12 || i == 17){
-            z = 6;
-            y = 30;
-        } else if(i == 13 || i == 18){
+        if(i == 16 || i == 23){
             z = 2;
             y = 40;
-        } else if(i == 14 || i == 19){
+        } else if(i == 17 || i == 24){
+            z = 6;
+            y = 20;
+        } else if(i == 18 || i == 25){
+            z = 20;
+            y = 12;
+        } else if(i == 19 || i == 26){
+            z = 15;
+            y = 0;
+        } else if(i == 20 || i == 27){
+            z = 0;
+            y = 0;
+        } else if(i == 21 || i == 28){
             z = 3;
             y = 10;
+        } else if(i == 22 || i == 29){
+            z = 1;
+            y = 30;
         }
 
-        if(i > 9 && i < 15){
+        if(i > 15 && i < 23){
             x = 20;
         }
 
-        if(i > 14 && i < 20){
+        if(i > 22 && i < 30){
             x = -20;
         }
 
-        if(i > 9 && i < 15){
+        if(i > 15 && i < 23){
             character[i].setAttribute('rotation', {x:90, y:270, z:0})
         }
-        if(i > 14 && i < 20){
+        if(i > 22 && i < 30){
             character[i].setAttribute('rotation', {x:90, y:90, z:0})
         }
 
@@ -107,10 +122,10 @@ enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
-        if(parseInt(localStorage.getItem("enemyQty")) == 7){
+        if(parseInt(localStorage.getItem("enemyQty")) == 10){
             window.location.href="/venceu.html";
         } 
-        document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
+        document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/10 inimigos";
         enemyElement.setAttribute('visible', false);
     });
   });

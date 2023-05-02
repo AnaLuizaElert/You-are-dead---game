@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+.heart{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+}
+
+#heart1{
+    right: 1rem;
+    visibility: visible;
+}
+
+#heart2{
+    right: 4rem;
+    visibility: visible;
+}
+
+#heart3{
+    right: 7rem;
+    visibility: visible;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#seg{
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+}
+
+#timer{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+#qtyEnemies{
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+}
