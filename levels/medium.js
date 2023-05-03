@@ -88,30 +88,33 @@ document.addEventListener("DOMContentLoaded", function() {
             z = 15;
             y = 0;
         } else if(i == 20 || i == 27){
-            z = 50;
-            y = 50;
+            z = 0;
+            y = 0;
         } else if(i == 21 || i == 28){
             z = 3;
             y = 10;
         } else if(i == 22 || i == 29){
             z = 1;
             y = 30;
+        } else if(i == 30 || i == 31){
+            z = 15;
+            y = 0;
         }
 
         //direito
-        if(i > 15 && i < 23){
+        if(i > 15 && i < 23 || i == 30){
             x = 20;
         }
 
         //esquerdo
-        if(i > 22 && i < 30){
+        if(i > 22 && i < 30 || i == 31){
             x = -20;
         }
 
-        if(i > 15 && i < 23){
+        if(i > 15 && i < 23 || i == 30){
             character[i].setAttribute('rotation', {x:90, y:270, z:0})
         }
-        if(i > 22 && i < 30){
+        if(i > 22 && i < 30 || i == 31){
             character[i].setAttribute('rotation', {x:90, y:90, z:0})
         }
 
