@@ -19,7 +19,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: #A086CB; */
     width: 100%;
     height: 100vh;
     gap: 3rem;
@@ -83,7 +82,6 @@
 }
 
 .buttonVoltar {
-    /* background-color: #B9A9D4; */
     border-radius: 1rem;
     width: 100%;
     height: 7vh;
@@ -94,7 +92,6 @@
 }
 
 .buttonJogar {
-    /* background-color: #8471A3; */
     border-radius: 1rem;
     width: 100%;
     height: 7vh;
