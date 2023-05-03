@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Fonte;
-    src: url(./fonts/Jujutsu\ Kaisen.ttf);
+    font-family: Jujutsu;
+    src: url(/fonts/Jujutsu.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Fonte;
+    font-family: Jujutsu;
     font-size: larger;
 }
 
