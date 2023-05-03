@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", function() {
             z = 15;
             y = 0;
         } else if(i == 20 || i == 27){
-            z = 0;
-            y = 0;
+            z = 50;
+            y = 50;
         } else if(i == 21 || i == 28){
             z = 3;
             y = 10;
@@ -98,10 +98,12 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 30;
         }
 
+        //direito
         if(i > 15 && i < 23){
             x = 20;
         }
 
+        //esquerdo
         if(i > 22 && i < 30){
             x = -20;
         }
