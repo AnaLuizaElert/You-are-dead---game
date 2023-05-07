@@ -48,7 +48,7 @@
     padding: 1rem;
 }
 
-.imageEasyCard {
+.imageEasyCard, .imageHardCard, .imageMediumCard, .imageImpossibleCard {
     width: 45%;
 }
 

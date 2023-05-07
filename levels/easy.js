@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href="/perdeu.html";
         }
     }, 1000)
-
     
     let character = Array.from(document.querySelectorAll(".clickable"));
   
