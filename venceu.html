@@ -20,7 +20,7 @@
             <div class="box">
                 <h1 class="title">Parabens!</h1>
                 <p class="font">Voce ganhou o nivel</p>
-                <p class="font">Impossivel</p>
+                <p id="level" class="font">Impossivel</p>
                 <p id="points" class="font"></p>
             </div>
         </div>
@@ -28,7 +28,21 @@
     <script>
         localStorage.setItem("enemyQty", 0);
         localStorage.setItem("friendQty", 0);
-        document.getElementById("points").innerText = localStorage.getItem("pontuacaoImp");
+
+        if(localStorage.getItem("level") == "impossible"){
+            document.getElementById("level").innerHTML = localStorage.getItem("level");
+            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoImp");
+        } else if (localStorage.getItem("level") == "hard"){
+            document.getElementById("level").innerHTML = localStorage.getItem("level");
+            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoHard");
+        } else if (localStorage.getItem("level") == "medium"){
+            document.getElementById("level").innerHTML = localStorage.getItem("level");
+            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoMedium");
+        } else {
+            document.getElementById("level").innerHTML = localStorage.getItem("level");
+            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoEasy");
+        }
+
     </script>
 </body>
 </html>

@@ -5,6 +5,8 @@ let aux = timer;
 
 document.addEventListener("DOMContentLoaded", function() {
 
+    localStorage.setItem("level", "impossible");
+
     let interval = setInterval(() => {
         aux --;
         document.getElementById("timer").innerHTML = aux;

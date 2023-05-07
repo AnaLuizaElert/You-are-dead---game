@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.getItem("pontuationImp") == undefined){
         localStorage.setItem("pontuationImp", 0);
     }
+
+    if(localStorage.getItem("level") == null || 
+    localStorage.getItem("level") == undefined){
+    localStorage.setItem("level", "");
+    }
 });
 
 

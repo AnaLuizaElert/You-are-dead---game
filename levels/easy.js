@@ -7,6 +7,8 @@ document.addEventListener("cursor", function() {})
 
 document.addEventListener("DOMContentLoaded", function() {
 
+    localStorage.setItem("level", "easy");
+
     let interval = setInterval(() => {
         aux --;
         document.getElementById("timer").innerHTML = aux;
