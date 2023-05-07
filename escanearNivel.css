@@ -9,7 +9,8 @@ p{
     justify-content: center;
     font-size: 2rem;
     font-family: Jujutsu;
-    padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 10px;
     background-color: aliceblue;
 }
