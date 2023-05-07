@@ -104,23 +104,30 @@ document.addEventListener("DOMContentLoaded", function() {
     }    
 });
 
+let processingClick = false;
+
 enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
-        let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
-        localStorage.setItem("enemyQty", addValue);
-        if(parseInt(localStorage.getItem("enemyQty")) == 7){
-            let points = 100;
-            points = points - localStorage.getItem("qtyFriends") * 10;
-            points = points - (60 - aux);
-            localStorage.setItem("pontuationEasy", points);
-            window.location.href="/venceu.html";
-        } 
-        document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
-        enemyElement.setAttribute('visible', false);
-        enemyElement.SetActive(false);
+        if (!processingClick) {
+            processingClick = true;
+
+            let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
+            localStorage.setItem("enemyQty", addValue);
+            enemyElement.setAttribute('visible', false);
+            if(parseInt(localStorage.getItem("enemyQty")) == 7){
+                let points = 100;
+                points = points - localStorage.getItem("qtyFriends") * 10;
+                points = points - (60 - aux);
+                localStorage.setItem("pontuationEasy", points);
+                window.location.href="/venceu.html";
+            } 
+            document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
+
+            processingClick = false;
+        }
     });
-  });
-  
+});
+
   friend.forEach((friendElement) => {
     friendElement.addEventListener('click', () => {
       let addValue = (parseInt(localStorage.getItem("friendQty")) + 1);
