@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
+        enemyElement.SetActive(false);
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
         if(parseInt(localStorage.getItem("enemyQty")) == 7){
