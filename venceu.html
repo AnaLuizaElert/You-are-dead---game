@@ -10,7 +10,7 @@
 </head>
 <body>
     <a href="index.html">
-        <div class="boxVoltar">
+        <div class="boxComeBack">
             <img src="./img/casa.png" alt="" class="casa">
         </div>
     </a>
@@ -19,15 +19,16 @@
             <img src="./img/gojoChibi.png" alt="" class="chibiGojo">
             <div class="box">
                 <h1 class="title">Parabens!</h1>
-                <p class="fonte">Voce ganhou o nivel</p>
-                <p class="fonte">Impossivel</p>
-                <p class="fonte">Pontos: 27</p>
+                <p class="font">Voce ganhou o nivel</p>
+                <p class="font">Impossivel</p>
+                <p id="points" class="font"></p>
             </div>
         </div>
     </div>
     <script>
         localStorage.setItem("enemyQty", 0);
         localStorage.setItem("friendQty", 0);
+        document.getElementById("points").value = localStorage.getItem("pontuacaoImp");
     </script>
 </body>
 </html>

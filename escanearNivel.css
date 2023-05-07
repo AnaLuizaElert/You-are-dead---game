@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Jujutsu;
+    src: url(./fonts/Jujutsu\ Kaisen.ttf);
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Jujutsu;
+}

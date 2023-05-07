@@ -9,7 +9,9 @@
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.1/dist/mindar-image-aframe.prod.js"></script>
         <link rel="icon" type="image/png" href="./img/logo.png" />
         <title>Escolher Nível</title>
+        <link rel="stylesheet" href="escanearNivel.css">
     </head>
+    <p id="message">Escaneie o nível que deseja jogar</p>
     <body onload="chooseMode()">
         <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB"
             renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"

@@ -49,7 +49,7 @@
     font-size: 15vw;
 }
 
-.fonte {
+.font {
     color: #262626;
     font-size: 7vw;
     text-align: center;
@@ -70,7 +70,7 @@
     position: absolute;
 }
 
-.boxVoltar {
+.boxComeBack {
     display: flex;
     justify-content: center;
     align-items: center;

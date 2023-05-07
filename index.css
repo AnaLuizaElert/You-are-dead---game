@@ -47,7 +47,7 @@
     padding-bottom: 2rem;
 }
 
-.buttonPontuacao {
+.buttonPontuation {
     background-color: #F27D9D;
     border-radius: 1rem;
     width: 90vw;
@@ -55,7 +55,7 @@
     border: 0;
 }
 
-.buttonJogar {
+.buttonStart {
     background-color: #FF3D72;
     border-radius: 1rem;
     width: 90vw;
@@ -63,12 +63,12 @@
     border: 0;
 }
 
-.buttonPontuacao:hover {
+.buttonPontuation:hover {
     background-color: #dd6b89;
     cursor: pointer;
 }
 
-.buttonJogar:hover {
+.buttonStart:hover {
     background-color: #f82960;
     cursor: pointer;
 }
