@@ -7,9 +7,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    color: aliceblue;
+    font-size: 1.5rem;
     background-color: aliceblue;
-    padding: 2rem;
+    padding: 0.5rem;
     font-family: Jujutsu;
 }
