@@ -1,6 +1,6 @@
 @font-face {
     font-family: Fonte;
-    src: url(./fonts/Jujutsu\ Kaisen.ttf);
+    src: url(../fonts/Jujutsu\ Kaisen.ttf);
 }
 
 * {
@@ -16,7 +16,7 @@
     justify-content: flex-end;
     align-items: center;
     background-color: black;
-    background-image: url(./img/Gojo.jpg);
+    background-image: url(../img/Gojo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
