@@ -31,16 +31,16 @@
 
         if(localStorage.getItem("level") == "impossible"){
             document.getElementById("level").innerHTML = localStorage.getItem("level");
-            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoImp");
+            document.getElementById("points").innerHTML = "Pontos: " + localStorage.getItem("pontuationImp");
         } else if (localStorage.getItem("level") == "hard"){
             document.getElementById("level").innerHTML = localStorage.getItem("level");
-            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoHard");
+            document.getElementById("points").innerHTML = "Pontos: " + localStorage.getItem("pontuationHard");
         } else if (localStorage.getItem("level") == "medium"){
             document.getElementById("level").innerHTML = localStorage.getItem("level");
-            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoMedium");
+            document.getElementById("points").innerHTML = "Pontos: " + localStorage.getItem("pontuationMedium");
         } else {
             document.getElementById("level").innerHTML = localStorage.getItem("level");
-            document.getElementById("points").innerHTML = localStorage.getItem("pontuacaoEasy");
+            document.getElementById("points").innerHTML = "Pontos: " + localStorage.getItem("pontuationEasy");
         }
 
     </script>
