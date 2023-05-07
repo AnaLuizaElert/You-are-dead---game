@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(enemy.length)
   
     // character.sort(() => Math.random() - 0.5);
-    /*Tirarrrr*/
-    localStorage.clear();
 
     if(localStorage.getItem("enemyQty") == null || 
     localStorage.getItem("enemyQty") == undefined){
@@ -138,6 +136,10 @@ enemy.forEach((enemyElement) => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
         if(parseInt(localStorage.getItem("enemyQty")) == 10){
+            let points = 300;
+            points = points - localStorage.getItem("qtyFriends") * 10;
+            points = points - (30 - aux);
+            localStorage.setItem("pontuationHard", points);
             window.location.href="/venceu.html";
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/10 inimigos";

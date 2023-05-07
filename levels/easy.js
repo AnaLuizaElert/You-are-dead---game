@@ -135,7 +135,6 @@ enemy.forEach((enemyElement) => {
       }
 
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
-        localStorage.setItem("pontuationEasy", 0);
         window.location.href="/perdeu.html";
       } 
     });
