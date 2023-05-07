@@ -108,12 +108,13 @@ let processingClick = false;
 
 enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
-        if (!processingClick) {
+        if (!processingClick &&  enemyElement.GetActive() == true) {
             processingClick = true;
 
             let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
             localStorage.setItem("enemyQty", addValue);
             enemyElement.setAttribute('visible', false);
+            enemyElement.SetActive(false);
             if(parseInt(localStorage.getItem("enemyQty")) == 7){
                 let points = 100;
                 points = points - localStorage.getItem("qtyFriends") * 10;
