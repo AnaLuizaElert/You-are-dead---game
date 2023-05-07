@@ -124,7 +124,7 @@ enemy.forEach((enemyElement) => {
             let points = 500;
             points = points - localStorage.getItem("qtyFriends") * 10;
             points = points - ((30 - aux) * 5);
-            localStorage.setItem("pontuationImpossible", points);
+            localStorage.setItem("pontuationImp", points);
             window.location.href="/venceu.html";
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/1 inimigo";
