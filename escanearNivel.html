@@ -7,11 +7,11 @@
         <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.1/dist/mindar-image-aframe.prod.js"></script>
-        <link rel="icon" type="image/png" href="../img/logo.png" />
+        <link rel="icon" type="image/png" href="./img/logo.png" />
         <title>Escolher Nível</title>
     </head>
     <body onload="chooseMode()">
-        <a-scene mindar-image="imageTargetSrc: ../targets.mind" color-space="sRGB"
+        <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB"
             renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
             device-orientation-permission-ui="enabled: false">
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -21,5 +21,5 @@
             <a-entity id="impossible" mindar-image-target="targetIndex: 3"></a-entity>
         </a-scene>
     </body>
-    <script src="../index.js"></script>
+    <script src="index.js"></script>
 </html>
