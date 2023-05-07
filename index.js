@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function() {
+    if(localStorage.getItem("pontuationEasy") == null || 
+        localStorage.getItem("pontuationEasy") == undefined){
+        localStorage.setItem("pontuationEasy", 0);
+    }
+    if(localStorage.getItem("pontuationMedium") == null || 
+        localStorage.getItem("pontuationMedium") == undefined){
+        localStorage.setItem("pontuationMedium", 0);
+    }
+    if(localStorage.getItem("pontuationHard") == null || 
+        localStorage.getItem("pontuationHard") == undefined){
+        localStorage.setItem("pontuationHard", 0);
+    }
+    if(localStorage.getItem("pontuationImp") == null || 
+        localStorage.getItem("pontuationImp") == undefined){
+        localStorage.setItem("pontuationImp", 0);
+    }
+});
+
+
 function chooseMode() {
     const target1 = document.getElementById('easy');
     const target2 = document.getElementById('medium');

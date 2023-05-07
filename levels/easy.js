@@ -3,9 +3,7 @@ const enemy = document.querySelectorAll(".enemy");
 let timer = parseInt(document.getElementById("timer").innerHTML);
 let aux = timer;
 
-document.addEventListener("cursor", function() {
-
-})
+document.addEventListener("cursor", function() {})
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -20,14 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     let character = Array.from(document.querySelectorAll(".clickable"));
-    console.log(character.length)
-    console.log(character);
-    console.log(friend.length)
-    console.log(enemy.length)
   
     // character.sort(() => Math.random() - 0.5);
-    /*Tirarrrr*/
-    localStorage.clear();
 
     if(localStorage.getItem("enemyQty") == null || 
     localStorage.getItem("enemyQty") == undefined){
@@ -116,6 +108,10 @@ enemy.forEach((enemyElement) => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
         if(parseInt(localStorage.getItem("enemyQty")) == 7){
+            let points = 100;
+            points = points - localStorage.getItem("qtyFriends") * 10;
+            points = points - (60 - aux);
+            localStorage.setItem("pontuationEasy", points);
             window.location.href="/venceu.html";
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
@@ -139,6 +135,7 @@ enemy.forEach((enemyElement) => {
       }
 
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
+        localStorage.setItem("pontuationEasy", 0);
         window.location.href="/perdeu.html";
       } 
     });

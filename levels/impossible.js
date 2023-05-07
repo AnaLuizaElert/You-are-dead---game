@@ -16,13 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     let character = Array.from(document.querySelectorAll(".clickable"));
-    console.log(character.length)
-    console.log(friend.length)
-    console.log(enemy.length)
-  
-    // character.sort(() => Math.random() - 0.5);
-    /*Tirarrrr*/
-    localStorage.clear();
 
     if(localStorage.getItem("enemyQty") == null || 
     localStorage.getItem("enemyQty") == undefined){
