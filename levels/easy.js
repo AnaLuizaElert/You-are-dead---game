@@ -115,7 +115,7 @@ enemy.forEach((enemyElement) => {
             localStorage.setItem("enemyQty", addValue);
             enemyElement.setAttribute('visible', false);
             // enemyElement.SetActive(false);
-            if(parseInt(localStorage.getItem("enemyQty")) == 7){
+            if(parseInt(localStorage.getItem("enemyQty")) == 10){
                 let points = 100;
                 points = points - localStorage.getItem("qtyFriends") * 10;
                 points = points - (60 - aux);
