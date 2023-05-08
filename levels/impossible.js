@@ -74,26 +74,26 @@ document.addEventListener("DOMContentLoaded", function() {
             z = 0;
             y = 0;
         } else if(i == 17 || i == 25){
-            z = 3;
+            z = 1;
             y = 10;
         } else if(i == 18 || i == 26){
-            z = 1;
+            z = 5;
             y = 28;
         } else if(i == 19 || i == 27){
-            z = 20;
-            y = 10;
-        } else if(i == 20 || i == 28){
             z = 10;
+            y = 20;
+        } else if(i == 20 || i == 28){
+            z = 20;
             y = 34;
         } else if(i == 21 || i == 29){
-            z = 5;
+            z = 25;
             y = 14;
         } else if(i == 22 || i == 30){
             z = 32;
-            y = 13;
+            y = 6;
         } else if(i == 23 || i == 31){
-            z = 26;
-            y = 25;
+            z = 36;
+            y = 22;
         }
 
         if(i > 15 && i < 24){
