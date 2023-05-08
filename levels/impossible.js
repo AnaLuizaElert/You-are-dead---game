@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 0;
         }else if(i == 1 || i == 9){
             x = 2;
-            y = 23;
+            y = -3;
         } else if(i == 2 || i == 10){
             x = 22;
-            y = 35;
+            y = -15;
         } else if(i == 3 || i == 11){
-            x = 32;
+            x = -12;
             y = 3;
         } else if(i == 4 || i == 12){
             x = 15;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             y = 20;
         } else if(i == 7 || i == 15){
             x = 6;
-            y = 30;
+            y = -10;
         }
 
         if(i > 7 && i < 16){
@@ -71,28 +71,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // paredes dos lados
         if(i == 16 || i == 24){
-            z = 0;
+            z = 5;
             y = 0;
         } else if(i == 17 || i == 25){
             z = 1;
             y = 10;
         } else if(i == 18 || i == 26){
             z = 5;
-            y = 28;
+            y = -8;
         } else if(i == 19 || i == 27){
             z = 10;
             y = 20;
         } else if(i == 20 || i == 28){
             z = 20;
-            y = 34;
+            y = -14;
         } else if(i == 21 || i == 29){
             z = 25;
             y = 14;
         } else if(i == 22 || i == 30){
-            z = 32;
+            z = -12;
             y = 6;
         } else if(i == 23 || i == 31){
-            z = 36;
+            z = -16;
             y = 22;
         }
 
