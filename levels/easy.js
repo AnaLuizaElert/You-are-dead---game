@@ -108,19 +108,19 @@ let processingClick = false;
 
 enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
-        if (!processingClick &&  enemyElement.GetActive() == true) {
+        if (!processingClick) {
             processingClick = true;
 
             let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
             localStorage.setItem("enemyQty", addValue);
             enemyElement.setAttribute('visible', false);
-            enemyElement.SetActive(false);
+            // enemyElement.SetActive(false);
             if(parseInt(localStorage.getItem("enemyQty")) == 7){
                 let points = 100;
                 points = points - localStorage.getItem("qtyFriends") * 10;
                 points = points - (60 - aux);
                 localStorage.setItem("pontuationEasy", points);
-                window.location.href="/venceu.html";
+                window.location.replace("/venceu.html");
             } 
             document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
 
@@ -145,7 +145,7 @@ enemy.forEach((enemyElement) => {
       }
 
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
-        window.location.href="/perdeu.html";
+        window.location.replace("/perdeu.html");
       } 
     });
 });

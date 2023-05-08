@@ -125,7 +125,7 @@ enemy.forEach((enemyElement) => {
             points = points - localStorage.getItem("qtyFriends") * 10;
             points = points - ((30 - aux) * 5);
             localStorage.setItem("pontuationImp", points);
-            window.location.href="/venceu.html";
+            window.location.replace("/venceu.html");
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/1 inimigo";
         enemyElement.setAttribute('visible', false);
@@ -148,7 +148,7 @@ enemy.forEach((enemyElement) => {
       }
 
       if(parseInt(localStorage.getItem("friendQty")) >= 3){
-        window.location.href="/perdeu.html";
+        window.location.replace("/perdeu.html");
       } 
     });
 });
