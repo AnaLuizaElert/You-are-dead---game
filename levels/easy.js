@@ -82,13 +82,16 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(i == 20 || i == 21){
             z = 18;
             y = 15;
+        } else if(i == 22){
+            z = -3;
+            y = 15;
         }
         
         if((i > 9 && i < 15) || i == 21){
             x = 20;
         }
         
-        if(i > 14 && i < 22 && i != 21){
+        if(i > 14 && i < 23 && i != 21){
             x = -20;
         }
         
@@ -104,28 +107,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }    
 });
 
-let processingClick = false;
-
 enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
-        if (!processingClick) {
-            processingClick = true;
-
-            let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
-            localStorage.setItem("enemyQty", addValue);
-            enemyElement.setAttribute('visible', false);
-            if(parseInt(localStorage.getItem("enemyQty")) == 7){
-                let points = 100;
-                points = points - localStorage.getItem("qtyFriends") * 10;
-                points = points - (60 - aux);
-                localStorage.setItem("pontuationEasy", points);
-                window.location.replace("/venceu.html");
-            } 
-            document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
-
-            enemyElement.remove();
-            processingClick = false;
+        let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
+        localStorage.setItem("enemyQty", addValue);
+        enemyElement.setAttribute('visible', false);
+        if(parseInt(localStorage.getItem("enemyQty")) == 7){
+            let points = 100;
+            points = points - localStorage.getItem("qtyFriends") * 10;
+            points = points - (60 - aux);
+            localStorage.setItem("pontuationEasy", points);
+            window.location.replace("/venceu.html");
         }
+        document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
+
+        enemyElement.remove();
+        processingClick = false;
     });
 });
 

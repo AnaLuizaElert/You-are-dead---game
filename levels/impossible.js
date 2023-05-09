@@ -129,7 +129,7 @@ enemy.forEach((enemyElement) => {
             window.location.replace("/venceu.html");
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/1 inimigo";
-        enemyElement.setAttribute('visible', false);
+        enemyElement.remove();
     });
   });
 

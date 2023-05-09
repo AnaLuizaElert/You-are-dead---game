@@ -132,7 +132,7 @@ enemy.forEach((enemyElement) => {
             window.location.replace("/venceu.html");
         } 
         document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/10 inimigos";
-        enemyElement.setAttribute('visible', false);
+        enemyElement.remove();
     });
   });
   
