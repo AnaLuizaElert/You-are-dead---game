@@ -123,8 +123,8 @@ enemy.forEach((enemyElement) => {
             } 
             document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
 
-            processingClick = false;
             enemyElement.remove();
+            processingClick = false;
         }
     });
 });
