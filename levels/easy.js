@@ -123,9 +123,8 @@ enemy.forEach((enemyElement) => {
             } 
             document.getElementById("qtyEnemies").innerHTML = localStorage.getItem("enemyQty") + "/7 inimigos";
 
-            enemyElement.classList.remove('enemy');
-            enemyElement.classList.remove('clickable');
             processingClick = false;
+            enemyElement.remove();
         }
     });
 });
