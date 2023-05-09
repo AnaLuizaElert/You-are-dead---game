@@ -96,6 +96,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if(i == 30 || i == 31){
             z = 15;
             y = 0;
+        } else if(i == 32){
+            z = -6;
+            y = 10;
         }
 
         //direito
@@ -104,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         //esquerdo
-        if(i > 22 && i < 30 || i == 31){
+        if(i > 22 && i < 32 && i != 30){
             x = -20;
         }
 
