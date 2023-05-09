@@ -120,6 +120,7 @@ enemy.forEach((enemyElement) => {
     enemyElement.addEventListener('click', () => {
         let addValue = (parseInt(localStorage.getItem("enemyQty")) + 1);
         localStorage.setItem("enemyQty", addValue);
+        enemyElement.classList.remove('clickable');
         if(parseInt(localStorage.getItem("enemyQty")) == 1){
             let points = 500;
             points = points - localStorage.getItem("qtyFriends") * 10;
