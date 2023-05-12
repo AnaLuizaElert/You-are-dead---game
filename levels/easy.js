@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let interval = setInterval(() => {
         aux --;
+        document.getElementById("timer").innerHTML = aux;
         if(aux == 0){
             clearInterval(interval);
             window.location.href="/perdeu.html";
