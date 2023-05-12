@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let interval = setInterval(() => {
         aux --;
-        if(localStorage.getItem("timer") == 0){
+        if(aux == 0){
             clearInterval(interval);
             window.location.href="/perdeu.html";
         }
