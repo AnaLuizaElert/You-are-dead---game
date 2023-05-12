@@ -8,11 +8,13 @@ document.addEventListener("cursor", function() {})
 document.addEventListener("DOMContentLoaded", function() {
 
     localStorage.setItem("level", "easy");
+    localStorage.setItem("timer", timer);
 
     let interval = setInterval(() => {
         aux --;
-        document.getElementById("timer").innerHTML = aux;
-        if(aux == 0){
+        localStorage.setItem("timer", aux)
+        document.getElementById("timer").innerHTML = localStorage.getItem("timer")
+        if(localStorage.getItem("timer") == 0){
             clearInterval(interval);
             window.location.href="/perdeu.html";
         }

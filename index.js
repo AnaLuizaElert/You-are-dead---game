@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.getItem("level") == undefined){
     localStorage.setItem("level", "");
     }
+
+    if(localStorage.getItem("timer") == null || 
+    localStorage.getItem("timer") == undefined){
+    localStorage.setItem("timer", 59);
+}
 });
 
 
