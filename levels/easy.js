@@ -8,12 +8,9 @@ document.addEventListener("cursor", function() {})
 document.addEventListener("DOMContentLoaded", function() {
 
     localStorage.setItem("level", "easy");
-    localStorage.setItem("timer", timer);
 
     let interval = setInterval(() => {
         aux --;
-        localStorage.setItem("timer", aux)
-        document.getElementById("timer").innerHTML = localStorage.getItem("timer")
         if(localStorage.getItem("timer") == 0){
             clearInterval(interval);
             window.location.href="/perdeu.html";
@@ -21,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000)
     
     let character = Array.from(document.querySelectorAll(".clickable"));
-  
-    // character.sort(() => Math.random() - 0.5);
 
     if(localStorage.getItem("enemyQty") == null || 
     localStorage.getItem("enemyQty") == undefined){
