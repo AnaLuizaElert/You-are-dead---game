@@ -130,7 +130,7 @@ enemy.forEach((enemyElement) => {
         if(parseInt(localStorage.getItem("enemyQty")) == 10){
             let points = 200;
             points = points - localStorage.getItem("qtyFriends") * 10;
-            points = points - (30 - aux);
+            points = points - (45 - aux);
             localStorage.setItem("pontuationMedium", points);
             window.location.replace("/venceu.html");
         } 
